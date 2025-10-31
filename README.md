@@ -15,6 +15,14 @@ export VIVADO_VER=2019.2
 export VIVADO_TOOL=${VIVADO_HOME}/${VIVADO_VER}/bin
 export PATH=${VIVADO_TOOL}:$PATH
 ```
+OR
+
+```bash
+export VIVADO_HOME=/tools/Xilinx
+export VIVADO_VER=2025.1
+export VIVADO_TOOL=${VIVADO_HOME}/${VIVADO_VER}/Vivado/bin
+export PATH=${VIVADO_TOOL}:$PATH
+```
 
 ## 🧩 Root Cause
 
