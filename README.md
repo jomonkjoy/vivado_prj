@@ -15,3 +15,12 @@ export VIVADO_VER=2019.2
 export VIVADO_TOOL=${VIVADO_HOME}/${VIVADO_VER}/bin
 export PATH=${VIVADO_TOOL}:$PATH
 ```
+
+## 🧩 Root Cause
+
+Vivado 2019.2 was built against ncurses 5. You can create a symbolic link from .6 to .5 safely — Vivado works fine with it.
+
+```
+sudo ln -s /usr/lib64/libtinfo.so.6 /usr/lib64/libtinfo.so.5
+sudo ln -s /lib/x86_64-linux-gnu/libtinfo.so.6 /lib/x86_64-linux-gnu/libtinfo.so.5
+```
